@@ -82,8 +82,8 @@ def Bayestry(test,table):
 host='localhost'
 port=3306
 user='root'
-password='8402135'
-db='watermelon'
+password='your password'
+db='watermelon(database name)'
 conn=pymysql.connect(host=host,port=port,user=user,password=password,database=db)
 dataset=pd.read_sql('select * from watermelon',conn)
 cursor=conn.cursor()
